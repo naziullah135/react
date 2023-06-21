@@ -6,7 +6,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'my-custom-image': "url('/public/apartment.jpg')"
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        'cc': '612px auto',
+      }
+    },
   },
   plugins: [],
 }
